@@ -1,20 +1,34 @@
-# CLANS.IO — Android
+# CLANS.IO — 2D Village Strategy Game
 
-A native Android starter for a gaming-clan community, built with Kotlin and Jetpack Compose.
+**CLANS.IO is a browser-based 2D strategy game** inspired by the village-building genre. It is designed to be played in a web browser on desktop or mobile—no Android app is required.
 
-## First milestone
-- Dark esports-inspired dashboard
-- Clan overview and member stats
-- Activity feed and quick actions
-- Native Android project using Gradle
-- GitHub Actions workflow to build a debug APK
+## Play the game
 
-## Build locally
-1. Install Android Studio and Android SDK 35.
-2. Open this repository in Android Studio.
-3. Let Gradle sync, then run the `app` configuration on an emulator or Android device.
+- Open `game/index.html` to see the game source.
+- GitHub Pages deployment is automated through **Actions → Publish CLANS.IO Game**.
+- After that workflow succeeds and Pages is enabled, the game should be available at:
+  https://anirudhadebbarma031214-commits.github.io/CLANS-IO/
 
-Or push to GitHub and download the **CLANS.IO Android APK** artifact from the Actions workflow after it completes.
+## Current gameplay
 
-## Current scope
-This is the first UI foundation. Authentication, real-time chat, clan creation, invites, and cloud persistence are not connected yet. No production backend or user accounts are configured.
+- Build a village on a 2D tile map.
+- Place gold mines, lumber mills, cannons, barracks, and walls.
+- Collect gold and wood over time.
+- Train troops and raid goblins.
+- Select buildings to inspect their health and details.
+- Save your village in the browser.
+- Animated fantasy-village intro screen with a **TAP TO PLAY** button.
+
+## Run locally
+
+1. Download or clone this repository.
+2. Open the `game` folder.
+3. Open `index.html` in a modern browser.
+
+For best compatibility, use a simple local web server if your browser restricts local-file storage.
+
+## Development
+
+The browser game is implemented in `game/index.html` with HTML, CSS, and JavaScript. The `app/` folder and Android workflow are separate legacy packaging work; they are not needed to play the browser game.
+
+This is an original fan-inspired project and does not use official Clash of Clans assets.
